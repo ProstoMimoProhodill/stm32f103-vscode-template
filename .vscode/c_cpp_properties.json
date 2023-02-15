@@ -4,12 +4,22 @@
             "name": "Win32",
             "compilerPath": "C:\\Program Files (x86)\\GNU Arm Embedded Toolchain\\10 2021.10\\bin\\arm-none-eabi-gcc",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}\\Core/Inc\\**",
+                "${workspaceFolder}\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\**",
+                "${workspaceFolder}\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy\\**",
+                "${workspaceFolder}\\Drivers\\CMSIS\\Include\\**",
+                "${workspaceFolder}\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include\\**",
+                "${workspaceFolder}\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\"
             ],
             "defines": [
+                "DEBUG",
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "__CC_ARM",
+                "STM32F1xx6=",
+                "STM32F103x6",
+                "USE_HAL_DRIVER"
             ],
             "intelliSenseMode": "windows-gcc-arm",
             "configurationProvider": "ms-vscode.makefile-tools"
